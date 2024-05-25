@@ -1,18 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SetupField : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private GameObject field;
+    [SerializeField] private int startSize = 1;
+    [SerializeField] private GameObject spawnAnimal;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        field.transform.localScale = new Vector3(startSize, startSize, startSize);
+        spawnAnimal.GetComponent<SpawnAnimal>().Spawn(startSize, startSize);
     }
 }
