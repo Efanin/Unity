@@ -45,7 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9af016030368d547a6be8cb0e3c455c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animmal: {fileID: 0}
+  food: {fileID: 5662177349224086652, guid: 7c8678ded1a87c54b9cbb5eb356b384e, type: 3}
+  speed: 10
 --- !u!1 &3214885747502124525
 GameObject:
   m_ObjectHideFlags: 0
